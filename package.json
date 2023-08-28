@@ -1,10 +1,16 @@
 {
-  "name": "app",
-  "private": "true",
-  "dependencies": {
-    "autoprefixer": "^10.4.15",
-    "esbuild": "^0.19.2",
-    "postcss": "^8.4.28",
-    "tailwindcss": "^3.3.3"
-  }
+	"name": "app",
+	"dependencies": {
+		"@hotwired/stimulus": "^3.2.2",
+		"@hotwired/turbo-rails": "^7.1.1",
+		"autoprefixer": "^10.4.15",
+		"esbuild": "^0.19.2",
+		"postcss": "^8.4.28",
+		"tailwindcss": "^3.3.3"
+	},
+	"scripts": {
+		"build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds",
+		"build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css"
+	},
+	"packageManager": "yarn@3.6.3"
 }

@@ -83,6 +83,8 @@ GEM
       xpath (~> 3.2)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
+    cssbundling-rails (1.2.0)
+      railties (>= 6.0.0)
     date (3.3.3)
     debug (1.8.0)
       irb (>= 1.5.0)
@@ -92,15 +94,14 @@ GEM
       activesupport (>= 5.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    importmap-rails (1.2.1)
-      actionpack (>= 6.0.0)
-      railties (>= 6.0.0)
     io-console (0.6.0)
     irb (1.7.4)
       reline (>= 0.3.6)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    jsbundling-rails (1.1.2)
+      railties (>= 6.0.0)
     loofah (2.21.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -127,6 +128,7 @@ GEM
     nio4r (2.5.9)
     nokogiri (1.15.4-x86_64-darwin)
       racc (~> 1.4)
+    pg (1.5.3)
     public_suffix (5.0.3)
     puma (5.6.7)
       nio4r (~> 2.0)
@@ -179,7 +181,6 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.6.4-x86_64-darwin)
     stimulus-rails (1.2.2)
       railties (>= 6.0.0)
     thor (1.2.2)
@@ -213,14 +214,15 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   capybara
+  cssbundling-rails
   debug
-  importmap-rails
   jbuilder
+  jsbundling-rails
+  pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.7, >= 7.0.7.2)
   selenium-webdriver
   sprockets-rails
-  sqlite3 (~> 1.4)
   stimulus-rails
   turbo-rails
   tzinfo-data

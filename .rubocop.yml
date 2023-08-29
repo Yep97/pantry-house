@@ -17,6 +17,9 @@ Style/FrozenStringLiteralComment:
 Style/GlobalStdStream:
   Description: Use $stdout instead of STDOUT.
   Enabled: false
+Style/RedundantFetchBlock:
+  Description: Identifies places where ‘fetch(key) { value }` can be replaced by `fetch(key, value)`.
+  Enabled: true
 Style/StringLiterals:
   Description: Checks if uses of quotes match the configured preference.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#consistent-string-literals

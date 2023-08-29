@@ -7,3 +7,5 @@ Style/StringLiterals:
   SupportedStyles:
   - single_quotes
   - double_quotes
+Style/FrozenStringLiteralComment:
+  Enabled: true

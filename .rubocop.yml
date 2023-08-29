@@ -9,3 +9,5 @@ Style/StringLiterals:
   - double_quotes
 Style/FrozenStringLiteralComment:
   Enabled: true
+Layout/EmptyLineAfterMagicComment:
+  Enabled: true

@@ -21,13 +21,13 @@ module PantryHouse
 
     config.generators do |g|
       g.test_framework :rspec, fixture: true
-      g.fixture_replacement :factory_girl, dir: 'spec/factories'
+      g.fixture_replacement :factory_girl, dir: "spec/factories"
 
       g.view_specs false
       g.helper_specs false
 
       g.after_generate do |files|
-        parsable_files = files.filter { |file| file.end_with?('.rb') }
+        parsable_files = files.filter { |file| file.end_with?(".rb") }
         system("bundle exec rubocop -A --fail-level=E #{parsable_files.shelljoin}", exception: true)
       end
     end

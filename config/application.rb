@@ -25,6 +25,11 @@ module PantryHouse
 
       g.view_specs false
       g.helper_specs false
+
+      g.after_generate do |files|
+        parsable_files = files.filter { |file| file.end_with?('.rb') }
+        system("bundle exec rubocop -A --fail-level=E #{parsable_files.shelljoin}", exception: true)
+      end
     end
   end
 end

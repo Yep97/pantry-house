@@ -12,6 +12,9 @@ Rails/FilePath:
   Description: This cop is used to identify usages of file path joining process to use ‘Rails.root.join` clause. It is used to add uniformity when joining paths.
   Enabled: true
   EnforcedStyle: slashes
+Style/BlockComments:
+  Description: Do not use block comments.
+  Enabled: true
 Style/Documentation:
   Description: Checks if there is comment on the top of the class.
   Enabled: false

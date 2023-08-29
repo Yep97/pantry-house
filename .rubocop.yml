@@ -24,6 +24,9 @@ Style/GlobalStdStream:
 Style/RedundantFetchBlock:
   Description: Identifies places where ‘fetch(key) { value }` can be replaced by `fetch(key, value)`.
   Enabled: true
+Style/RedundantInterpolation:
+  Description: Checks for strings that are just an interpolated expression.
+  Enabled: false
 Style/StringLiterals:
   Description: Checks if uses of quotes match the configured preference.
   Enabled: true

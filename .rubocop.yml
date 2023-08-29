@@ -32,6 +32,13 @@ Style/StringLiterals:
   SupportedStyles:
   - single_quotes
   - double_quotes
+Style/StringLiteralsInInterpolation:
+  Description: Checks that quotes inside string, symbol, and regexp interpolations match the configured preference.
+  Enabled: true
+  EnforcedStyle: double_quotes
+  SupportedStyles:
+  - single_quotes
+  - double_quotes
 Style/SymbolArray:
   Description: Use %i or %I for arrays of symbols.
   Enabled: false

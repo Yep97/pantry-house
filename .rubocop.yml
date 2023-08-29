@@ -19,3 +19,6 @@ Layout/EmptyLineAfterMagicComment:
 Layout/SpaceInsidePercentLiteralDelimiters:
   Description: Checks if there is unnecessary space in Percent Literal Delimeters.
   Enabled: true
+Layout/SpaceInsideArrayLiteralBrackets:
+  Description: Do not use space inside array brackets
+  Enabled: true

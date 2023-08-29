@@ -8,8 +8,14 @@ Style/StringLiterals:
   - single_quotes
   - double_quotes
 Style/FrozenStringLiteralComment:
+  Description: Checks if there is frozen_string_literal magic comment on the top of the file.
   Enabled: true
+Style/Documentation:
+  Description: Checks if there is comment on the top of the class.
+  Enabled: false
 Layout/EmptyLineAfterMagicComment:
+  Description: Checks if there is empty line after magic comment.
   Enabled: true
 Layout/SpaceInsidePercentLiteralDelimiters:
+  Description: Checks if there is unnecessary space in Percent Literal Delimeters.
   Enabled: true

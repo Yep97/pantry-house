@@ -1,4 +1,22 @@
 require: rubocop-rails
+Layout/EmptyLineAfterMagicComment:
+  Description: Checks if there is empty line after magic comment.
+  Enabled: true
+Layout/SpaceInsideArrayLiteralBrackets:
+  Description: Do not use space inside array brackets
+  Enabled: true
+Layout/SpaceInsidePercentLiteralDelimiters:
+  Description: Checks if there is unnecessary space in Percent Literal Delimeters.
+  Enabled: true
+Style/Documentation:
+  Description: Checks if there is comment on the top of the class.
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Description: Checks if there is frozen_string_literal magic comment on the top of the file.
+  Enabled: true
+Style/GlobalStdStream:
+  Description: Use $stdout instead of STDOUT.
+  Enabled: false
 Style/StringLiterals:
   Description: Checks if uses of quotes match the configured preference.
   StyleGuide: https://github.com/bbatsov/ruby-style-guide#consistent-string-literals
@@ -7,18 +25,3 @@ Style/StringLiterals:
   SupportedStyles:
   - single_quotes
   - double_quotes
-Style/FrozenStringLiteralComment:
-  Description: Checks if there is frozen_string_literal magic comment on the top of the file.
-  Enabled: true
-Style/Documentation:
-  Description: Checks if there is comment on the top of the class.
-  Enabled: false
-Layout/EmptyLineAfterMagicComment:
-  Description: Checks if there is empty line after magic comment.
-  Enabled: true
-Layout/SpaceInsidePercentLiteralDelimiters:
-  Description: Checks if there is unnecessary space in Percent Literal Delimeters.
-  Enabled: true
-Layout/SpaceInsideArrayLiteralBrackets:
-  Description: Do not use space inside array brackets
-  Enabled: true

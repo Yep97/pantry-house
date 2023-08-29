@@ -8,6 +8,10 @@ Layout/SpaceInsideArrayLiteralBrackets:
 Layout/SpaceInsidePercentLiteralDelimiters:
   Description: Checks if there is unnecessary space in Percent Literal Delimeters.
   Enabled: true
+Rails/FilePath:
+  Description: This cop is used to identify usages of file path joining process to use ‘Rails.root.join` clause. It is used to add uniformity when joining paths.
+  Enabled: true
+  EnforcedStyle: slashes
 Style/Documentation:
   Description: Checks if there is comment on the top of the class.
   Enabled: false
@@ -22,13 +26,13 @@ Style/RedundantFetchBlock:
   Enabled: true
 Style/StringLiterals:
   Description: Checks if uses of quotes match the configured preference.
-  StyleGuide: https://github.com/bbatsov/ruby-style-guide#consistent-string-literals
   Enabled: true
   EnforcedStyle: double_quotes
+  StyleGuide: https://github.com/bbatsov/ruby-style-guide#consistent-string-literals
   SupportedStyles:
   - single_quotes
   - double_quotes
 Style/SymbolArray:
   Description: Use %i or %I for arrays of symbols.
-  StyleGuide: https://github.com/bbatsov/ruby-style-guide#percent-i
   Enabled: false
+  StyleGuide: https://github.com/bbatsov/ruby-style-guide#percent-i

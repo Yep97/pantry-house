@@ -11,3 +11,5 @@ Style/FrozenStringLiteralComment:
   Enabled: true
 Layout/EmptyLineAfterMagicComment:
   Enabled: true
+Layout/SpaceInsidePercentLiteralDelimiters:
+  Enabled: true
